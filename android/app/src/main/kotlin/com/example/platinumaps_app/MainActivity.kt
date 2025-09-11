@@ -9,6 +9,6 @@ class MainActivity : FlutterActivity() {
         flutterEngine
             .platformViewsController
             .registry
-            .registerViewFactory("com.example.platinumaps_app/pm-webview", NativePmWebViewFactory())
+            .registerViewFactory("jp.co.bravesoft.platinumaps/platinumaps_view", NativePmWebViewFactory())
     }
 }

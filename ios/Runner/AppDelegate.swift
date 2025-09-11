@@ -10,7 +10,7 @@ import UIKit
     GeneratedPluginRegistrant.register(with: self)
 
     // Register the platform view
-    guard let pluginRegistrar = self.registrar(forPlugin: "pm-webview")
+    guard let pluginRegistrar = self.registrar(forPlugin: "platinumaps_flutter")
     else {
       return false
     }
@@ -18,7 +18,7 @@ import UIKit
     let factory = PmWebViewNativeFactory()
     pluginRegistrar.register(
       factory,
-      withId: "com.example.platinumaps_app/pm-webview"
+      withId: "jp.co.bravesoft.platinumaps/platinumaps_view"
     )
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
