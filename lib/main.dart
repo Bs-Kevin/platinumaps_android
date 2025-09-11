@@ -56,7 +56,19 @@ class PmWebView extends StatelessWidget {
       surfaceFactory: (context, controller) {
         return AndroidViewSurface(
           controller: controller as AndroidViewController,
-          gestureRecognizers: const <Factory<VerticalDragGestureRecognizer>>{},
+          gestureRecognizers: <Factory<OneSequenceGestureRecognizer>>{
+            Factory<TapGestureRecognizer>(() => TapGestureRecognizer()),
+            Factory<LongPressGestureRecognizer>(
+              () => LongPressGestureRecognizer(),
+            ),
+            Factory<VerticalDragGestureRecognizer>(
+              () => VerticalDragGestureRecognizer(),
+            ),
+            Factory<HorizontalDragGestureRecognizer>(
+              () => HorizontalDragGestureRecognizer(),
+            ),
+            Factory<ScaleGestureRecognizer>(() => ScaleGestureRecognizer()),
+          },
           hitTestBehavior: PlatformViewHitTestBehavior.opaque,
         );
       },

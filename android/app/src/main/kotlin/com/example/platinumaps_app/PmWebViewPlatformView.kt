@@ -5,6 +5,7 @@ import android.nfc.Tag
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.webkit.WebView
 import io.flutter.plugin.platform.PlatformView
 import jp.co.boldright.platinumaps.sdk.PmWebView
 
@@ -14,6 +15,19 @@ internal class PmWebViewPlatformView(
 ) : PlatformView {
     private val webView: PmWebView by lazy {
         PmWebView(context).also { webView ->
+            // Enable focus and keyboard input
+            webView.isFocusable = true
+            webView.isFocusableInTouchMode = true
+            webView.requestFocus()
+            
+            // Override onTouchEvent to ensure proper focus handling
+            webView.setOnTouchListener { view, motionEvent ->
+                if (!view.hasFocus()) {
+                    view.requestFocus()
+                }
+                false
+            }
+            
             val pmPath = creationParams?.get("pm_path") as? String ?: ""
             webView.openPlatinumaps(
                         jp.co.boldright.platinumaps.sdk.PmMapOptions(
