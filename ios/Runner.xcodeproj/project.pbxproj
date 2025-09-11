@@ -10,6 +10,11 @@
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		6B9DBADC2E728E82000AFDF0 /* PMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DBAD82E728E82000AFDF0 /* PMWebViewController.swift */; };
+		6B9DBADD2E728E82000AFDF0 /* PMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DBAD72E728E82000AFDF0 /* PMMainViewController.swift */; };
+		6B9DBADE2E728E82000AFDF0 /* PMWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DBADA2E728E82000AFDF0 /* PMWebView.swift */; };
+		6B9DBAE12E728EE4000AFDF0 /* PmWebViewNativeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DBAE02E728ED8000AFDF0 /* PmWebViewNativeFactory.swift */; };
+		6B9DBAE32E728EF3000AFDF0 /* PmWebViewPlatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DBAE22E728EEE000AFDF0 /* PmWebViewPlatformView.swift */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		78A318202AECB46A00862997 /* FlutterGeneratedPluginSwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 78A3181F2AECB46A00862997 /* FlutterGeneratedPluginSwiftPackage */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -46,6 +51,11 @@
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		6B9DBAD72E728E82000AFDF0 /* PMMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMMainViewController.swift; sourceTree = "<group>"; };
+		6B9DBAD82E728E82000AFDF0 /* PMWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMWebViewController.swift; sourceTree = "<group>"; };
+		6B9DBADA2E728E82000AFDF0 /* PMWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMWebView.swift; sourceTree = "<group>"; };
+		6B9DBAE02E728ED8000AFDF0 /* PmWebViewNativeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmWebViewNativeFactory.swift; sourceTree = "<group>"; };
+		6B9DBAE22E728EEE000AFDF0 /* PmWebViewPlatformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PmWebViewPlatformView.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78E0A7A72DC9AD7400C4905E /* FlutterGeneratedPluginSwiftPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FlutterGeneratedPluginSwiftPackage; path = Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage; sourceTree = "<group>"; };
@@ -77,6 +87,32 @@
 				331C807B294A618700263BE5 /* RunnerTests.swift */,
 			);
 			path = RunnerTests;
+			sourceTree = "<group>";
+		};
+		6B9DBAD92E728E82000AFDF0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9DBAD72E728E82000AFDF0 /* PMMainViewController.swift */,
+				6B9DBAD82E728E82000AFDF0 /* PMWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B9DBADB2E728E82000AFDF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B9DBADA2E728E82000AFDF0 /* PMWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B9DBAE42E729011000AFDF0 /* Platinumaps */ = {
+			isa = PBXGroup;
+			children = (
+				6B9DBAD92E728E82000AFDF0 /* ViewControllers */,
+				6B9DBADB2E728E82000AFDF0 /* Views */,
+			);
+			path = Platinumaps;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -113,6 +149,9 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				6B9DBAE22E728EEE000AFDF0 /* PmWebViewPlatformView.swift */,
+				6B9DBAE02E728ED8000AFDF0 /* PmWebViewNativeFactory.swift */,
+				6B9DBAE42E729011000AFDF0 /* Platinumaps */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -278,7 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9DBAE32E728EF3000AFDF0 /* PmWebViewPlatformView.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				6B9DBADC2E728E82000AFDF0 /* PMWebViewController.swift in Sources */,
+				6B9DBAE12E728EE4000AFDF0 /* PmWebViewNativeFactory.swift in Sources */,
+				6B9DBADD2E728E82000AFDF0 /* PMMainViewController.swift in Sources */,
+				6B9DBADE2E728E82000AFDF0 /* PMWebView.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 67457CZ6NQ;
+				DEVELOPMENT_TEAM = 6TJ8HFQMT5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,7 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 67457CZ6NQ;
+				DEVELOPMENT_TEAM = 6TJ8HFQMT5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,7 +619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 67457CZ6NQ;
+				DEVELOPMENT_TEAM = 6TJ8HFQMT5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

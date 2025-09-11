@@ -45,5 +45,10 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<!-- 位置情報権限 -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>このアプリは位置情報を使用してWebサイトに位置情報サービスを提供します。</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>このアプリは位置情報を使用してWebサイトに位置情報サービスを提供します。</string>
 </dict>
 </plist>
